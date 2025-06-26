@@ -1,0 +1,7 @@
+#making a tip calculator
+a1=float(input("what is the bill amount \n"))
+a2=float(input("tip percentage \n"))
+a3=int(input("no. of people \n"))
+a4=((((a1*a2)/100))+a1)/a3
+a5=round(a4,3)
+print(f"the amount to be given by each person is= \n{a5}")
