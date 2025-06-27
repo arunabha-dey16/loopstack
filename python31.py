@@ -1,0 +1,29 @@
+print("enter your choices for oedering a pizza")
+ps=input("type S for small,M for medium,L for large \n")
+pe=input("type Y for yes or N for no , if you want  pepperonie\n")
+ec=input("type Y for yes or N for no , if you want extra chese \n")
+bill=0
+if ps=='S':
+    bill+=10
+elif ps=='M':
+    bill+=15
+elif ps=='L':
+    bill+=20
+else:
+    print("wrong choice")
+
+if pe=='Y':
+    if ps=='S':
+        bill+=2
+    else:
+        bill+=3
+else:
+    print("wrong choice")
+
+
+if ec=='Y':
+    bill+=1
+
+print(f"final bill is:{bill}")
+
+
